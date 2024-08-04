@@ -181,20 +181,20 @@ $gray: #949494;
         text-align: right;
       }
     }
-    .relProSlider{
-        position: relative;
-        .nextBtn{
-            position: absolute;
-            top: 39%;
-            right: 0;
-            z-index: 10;
-        }
-        .prevBtn{
-            position: absolute;
-            top: 39%;
-            left: 0;
-            z-index: 10;
-        }
+    .relProSlider {
+      position: relative;
+      .nextBtn {
+        position: absolute;
+        top: 39%;
+        right: 0;
+        z-index: 10;
+      }
+      .prevBtn {
+        position: absolute;
+        top: 39%;
+        left: 0;
+        z-index: 10;
+      }
     }
     .proBox {
       margin-bottom: 40px;
@@ -220,6 +220,105 @@ $gray: #949494;
           text-align: right;
           color: black;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  direction: rtl;
+  .contactContainer {
+    padding: 130px 20px 40px;
+  }
+  .section1 {
+    h1 {
+      margin-bottom: 23px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $gray;
+      font-family: IRANYekan;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 31.09px;
+      text-align: right;
+    }
+    .contactDetail {
+      ul {
+        li {
+          display: flex;
+          column-gap: 5px;
+          margin-bottom: 31px;
+          p {
+            font-family: IRANYekan;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24.18px;
+            text-align: right;
+            color: $primary;
+          }
+          a {
+            font-family: IRANYekan;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24.18px;
+            text-align: right;
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+        .mail {
+          font-family: IRANYekan;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24.18px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  .section2 {
+    .mapSection {
+      margin-bottom: 25px;
+      .mapIn {
+        width: 100%;
+        height: 263px;
+      }
+    }
+    .formSection {
+      h3 {
+        font-family: IRANYekan;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31.09px;
+        text-align: right;
+        color: #05481f;
+        margin-bottom: 20px;
+      }
+      .para {
+        margin-bottom: 40px;
+        p {
+          font-family: IRANYekan;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24.18px;
+          text-align: right;
+        }
+      }
+      form{
+        button{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            //styleName: 14/r;
+font-family: IRANYekan;
+font-size: 14px;
+font-weight: 400;
+line-height: 24.18px;
+text-align: center;
+
         }
       }
     }
