@@ -69,4 +69,146 @@
   text-align: right;
   color: black;
   text-decoration: none;
+}
+
+.article {
+  direction: rtl;
+  background-color: black;
+}
+.article .para p {
+  font-family: IRANYekan;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: justify;
+  color: white;
+}
+.article article h2,
+.article article h3,
+.article article h4,
+.article article h5,
+.article article h6 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.article article h1,
+.article article p,
+.article article h2,
+.article article h3,
+.article article h4,
+.article article h5,
+.article article h6 {
+  color: white;
+}
+.article article img {
+  width: 100%;
+}
+.article .section1 {
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.article .section1 img {
+  width: 100%;
+  max-height: 100vh;
+}
+.article .section1 .overInfo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+}
+.article .section1 .overInfo .date span {
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: right;
+  color: white;
+}
+.article .section1 .overInfo .social ul {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.article .section2,
+.article .section4,
+.article .section6 {
+  padding: 13px 20px 0 20px;
+}
+.article .section2 h1,
+.article .section4 h1,
+.article .section6 h1 {
+  font-family: IRANYekan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.64px;
+  text-align: right;
+  margin-bottom: 12px;
+}
+.article .section3,
+.article .section5 {
+  margin: 20px 0;
+}
+.article .section7 {
+  padding-bottom: 14px;
+}
+.article .section7 img {
+  width: 100%;
+}
+.article .section8 {
+  background-color: white;
+}
+.article .section8 .titl p {
+  padding: 30px 20px 20px;
+  color: black;
+  font-family: IRANYekan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.64px;
+  text-align: right;
+}
+.article .section8 .relProSlider {
+  position: relative;
+}
+.article .section8 .relProSlider .nextBtn {
+  position: absolute;
+  top: 39%;
+  right: 0;
+  z-index: 10;
+}
+.article .section8 .relProSlider .prevBtn {
+  position: absolute;
+  top: 39%;
+  left: 0;
+  z-index: 10;
+}
+.article .section8 .proBox {
+  margin-bottom: 40px;
+  border: 1px solid #949494;
+}
+.article .section8 .proBox .imgS img {
+  width: 100%;
+}
+.article .section8 .proBox a {
+  text-decoration: none;
+}
+.article .section8 .proBox .title {
+  display: flex;
+  padding: 20px 8px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  align-items: center;
+}
+.article .section8 .proBox .title p {
+  font-family: IRANYekan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.64px;
+  text-align: right;
+  color: black;
+  text-decoration: none;
 }/*# sourceMappingURL=mobile-m-style.css.map */
