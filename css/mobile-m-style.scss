@@ -304,21 +304,163 @@ $gray: #949494;
           text-align: right;
         }
       }
-      form{
-        button{
+      form {
+        button {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $primary;
+          //styleName: 14/r;
+          font-family: IRANYekan;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24.18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  direction: rtl;
+  .blogContainer {
+    padding: 163px 20px 0;
+    .section1 {
+      position: relative;
+      .title {
+        padding: 4px 0 25px 0;
+        border: 1px solid black;
+        h1 {
+          font-family: IRANYekan;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 31.09px;
+          text-align: center;
+        }
+      }
+      .searchContainer {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+
+        right: 0;
+
+        form {
+          margin: 0 auto;
+          background-color: white;
+          height: 30px;
+          display: flex;
+          width: fit-content;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid black;
+          button {
+            background-color: transparent;
+            border: none;
+          }
+          input {
+            border: none;
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 31.09px;
+            text-align: right;
+            height: 80%;
+          }
+        }
+      }
+    }
+    .section2 {
+      margin-top: 38px;
+      margin-bottom: 30px;
+      .filters {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 20px;
+          li {
+            opacity: 0.5;
+            span {
+              font-family: Josefin Sans;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 12px;
+              text-align: right;
+              color: #272727;
+            }
+          }
+          .activeFilter {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .section3 {
+      .blogBox {
+        margin-bottom: 41px;
+        border: 1px solid $gray;
+        .imgS {
+          img {
             width: 100%;
-            height: 50px;
+          }
+        }
+        .catName {
+          font-family: IRANYekan;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 18px;
+          text-align: right;
+          margin-bottom: 6px;
+          color: #00000080;
+          padding: 0 10px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          margin-bottom: 2px;
+          p {
+            font-family: IRANYekan;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.64px;
+            text-align: right;
+            padding: 0 10px;
+          }
+        }
+        .para {
+        //   margin-bottom: 10px;
+        padding: 0 10px;
+          p {
+            font-family: IRANYekan;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 17.27px;
+            text-align: right;
+          }
+        }
+        .link {
+            padding: 10px;
+          display: flex;
+          justify-content: left;
+          a {
+            border: 1px solid $primary;
+            border-radius: 19px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: $primary;
-            //styleName: 14/r;
-font-family: IRANYekan;
-font-size: 14px;
-font-weight: 400;
-line-height: 24.18px;
-text-align: center;
-
+            column-gap: 8px;
+            width: 105px;
+            height: 25px;
+            font-family: IRANYekan;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 17.27px;
+            text-align: right;
+          }
         }
       }
     }

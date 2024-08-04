@@ -297,4 +297,141 @@
   font-weight: 400;
   line-height: 24.18px;
   text-align: center;
+}
+
+.blog {
+  direction: rtl;
+}
+.blog .blogContainer {
+  padding: 163px 20px 0;
+}
+.blog .blogContainer .section1 {
+  position: relative;
+}
+.blog .blogContainer .section1 .title {
+  padding: 4px 0 25px 0;
+  border: 1px solid black;
+}
+.blog .blogContainer .section1 .title h1 {
+  font-family: IRANYekan;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31.09px;
+  text-align: center;
+}
+.blog .blogContainer .section1 .searchContainer {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+}
+.blog .blogContainer .section1 .searchContainer form {
+  margin: 0 auto;
+  background-color: white;
+  height: 30px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.blog .blogContainer .section1 .searchContainer form button {
+  background-color: transparent;
+  border: none;
+}
+.blog .blogContainer .section1 .searchContainer form input {
+  border: none;
+  font-family: IRANYekan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 31.09px;
+  text-align: right;
+  height: 80%;
+}
+.blog .blogContainer .section2 {
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+.blog .blogContainer .section2 .filters ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.blog .blogContainer .section2 .filters ul li {
+  opacity: 0.5;
+}
+.blog .blogContainer .section2 .filters ul li span {
+  font-family: Josefin Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: right;
+  color: #272727;
+}
+.blog .blogContainer .section2 .filters ul .activeFilter {
+  opacity: 1;
+}
+.blog .blogContainer .section3 .blogBox {
+  margin-bottom: 41px;
+  border: 1px solid #949494;
+}
+.blog .blogContainer .section3 .blogBox .imgS img {
+  width: 100%;
+}
+.blog .blogContainer .section3 .blogBox .catName {
+  font-family: IRANYekan;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: right;
+  margin-bottom: 6px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  padding: 0 10px;
+}
+.blog .blogContainer .section3 .blogBox a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2px;
+}
+.blog .blogContainer .section3 .blogBox a p {
+  font-family: IRANYekan;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.64px;
+  text-align: right;
+  padding: 0 10px;
+}
+.blog .blogContainer .section3 .blogBox .para {
+  padding: 0 10px;
+}
+.blog .blogContainer .section3 .blogBox .para p {
+  font-family: IRANYekan;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 17.27px;
+  text-align: right;
+}
+.blog .blogContainer .section3 .blogBox .link {
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+}
+.blog .blogContainer .section3 .blogBox .link a {
+  border: 1px solid #d30e15;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  width: 105px;
+  height: 25px;
+  font-family: IRANYekan;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 17.27px;
+  text-align: right;
 }/*# sourceMappingURL=mobile-m-style.css.map */
