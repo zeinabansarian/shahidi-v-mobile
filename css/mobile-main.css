@@ -1160,6 +1160,22 @@ footer.MobileFooter > .Bottom .CopyRight a span {
     -o-transform: scale(0.2);
   }
 }
+.resultSearch {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.resultSearch p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.45px;
+  color: #000;
+}
+
 .searchContainer {
   width: 100vw;
   height: 100vh;
@@ -1199,29 +1215,14 @@ footer.MobileFooter > .Bottom .CopyRight a span {
   opacity: 1;
   pointer-events: all;
 }
-.searchContainer .resultSearch {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(15vh);
-  margin: 0 auto;
-}
-.searchContainer .resultSearch p {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 22.45px;
-  color: #000;
-}
 
-.searchh .searchContainer {
+.searchh-mobile .searchContainer {
   position: unset;
   opacity: 1;
   height: unset;
   z-index: 0;
   pointer-events: fill;
+  padding-top: 30vh;
 }
 
 .searchContainer .CloseSerch {
@@ -1261,7 +1262,7 @@ footer.MobileFooter > .Bottom .CopyRight a span {
 }
 
 .searchContainer .inputBox {
-  width: 60%;
+  width: 90%;
   display: flex;
   position: relative;
   justify-content: center;
@@ -1279,13 +1280,19 @@ footer.MobileFooter > .Bottom .CopyRight a span {
   top: 0;
 }
 
-.searchh {
+.searchh-mobile {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding-top: 30vh;
+  overflow: hidden;
 }
-.searchh .loaded {
+.searchh-mobile .MobileHeader .ToggleItem {
+  background-color: #000000 !important;
+}
+.searchh-mobile .MobileHeader .SearchIcon svg, .searchh-mobile .MobileHeader .SearchIcon path {
+  stroke: #000000 !important;
+}
+.searchh-mobile .loaded {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1295,27 +1302,27 @@ footer.MobileFooter > .Bottom .CopyRight a span {
   gap: 5em;
   flex-direction: column;
 }
-.searchh .loaded .news {
+.searchh-mobile .loaded .news {
   width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.searchh .loaded .news > .Title {
+.searchh-mobile .loaded .news > .Title {
   width: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5em;
 }
-.searchh .loaded .news > .Title p {
+.searchh-mobile .loaded .news > .Title p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.04px;
   color: #000000;
 }
-.searchh .loaded .news .swiper-button-next,
-.searchh .loaded .news .swiper-button-prev {
+.searchh-mobile .loaded .news .swiper-button-next,
+.searchh-mobile .loaded .news .swiper-button-prev {
   width: 55px;
   z-index: 1;
   right: 0;
@@ -1331,99 +1338,98 @@ footer.MobileFooter > .Bottom .CopyRight a span {
   -ms-transform: skew(5deg) rotate(4deg);
   -o-transform: skew(5deg) rotate(4deg);
 }
-.searchh .loaded .news .swiper-button-next::before, .searchh .loaded .news .swiper-button-next::after,
-.searchh .loaded .news .swiper-button-prev::before,
-.searchh .loaded .news .swiper-button-prev::after {
+.searchh-mobile .loaded .news .swiper-button-next::before, .searchh-mobile .loaded .news .swiper-button-next::after,
+.searchh-mobile .loaded .news .swiper-button-prev::before,
+.searchh-mobile .loaded .news .swiper-button-prev::after {
   content: none;
 }
-.searchh .loaded .news .swiper-button-next svg,
-.searchh .loaded .news .swiper-button-prev svg {
+.searchh-mobile .loaded .news .swiper-button-next svg,
+.searchh-mobile .loaded .news .swiper-button-prev svg {
   width: 10px;
 }
-.searchh .loaded .news .swiper-button-prev {
+.searchh-mobile .loaded .news .swiper-button-prev {
   left: unset;
   left: 0;
   transform: skew(-2deg) rotateY(-20deg);
 }
-.searchh .loaded .news .Newslist {
+.searchh-mobile .loaded .news .Newslist {
   width: 100%;
   position: relative;
   display: flex;
   overflow: hidden;
   margin-top: 1.5em;
 }
-.searchh .loaded .news .Newslist .swiper-news,
-.searchh .loaded .news .Newslist .swiper-slide {
+.searchh-mobile .loaded .news .Newslist .swiper-news,
+.searchh-mobile .loaded .news .Newslist .swiper-slide {
   width: 100%;
   display: flex;
   overflow: hidden;
 }
-.searchh .loaded .Blogs {
+.searchh-mobile .loaded .Blogs {
   width: 95%;
   display: flex;
   flex-direction: column;
   margin-right: auto;
 }
-.searchh .loaded .Blogs > .Title {
+.searchh-mobile .loaded .Blogs > .Title {
   width: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5em;
 }
-.searchh .loaded .Blogs > .Title p {
+.searchh-mobile .loaded .Blogs > .Title p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.04px;
   color: #000000;
 }
-.searchh .loaded .Blogs .Newslist {
+.searchh-mobile .loaded .Blogs .Newslist {
   width: 100%;
   position: relative;
   display: flex;
   overflow: hidden;
   margin-top: 1.5em;
 }
-.searchh .loaded .Blogs .Newslist .swiper-blog,
-.searchh .loaded .Blogs .Newslist .swiper-slide {
+.searchh-mobile .loaded .Blogs .Newslist .swiper-blog,
+.searchh-mobile .loaded .Blogs .Newslist .swiper-slide {
   width: 100%;
   display: flex;
   overflow: hidden;
 }
-.searchh .loaded .product {
-  width: 95%;
-  margin-right: auto;
+.searchh-mobile .loaded .product {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  margin-top: 5em;
+  margin: 0 auto;
 }
-.searchh .loaded .product > .Title {
+.searchh-mobile .loaded .product > .Title {
   width: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5em;
 }
-.searchh .loaded .product > .Title p {
+.searchh-mobile .loaded .product > .Title p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.04px;
   color: #000000;
 }
-.searchh .loaded .product .Productlist {
+.searchh-mobile .loaded .product .Productlist {
   width: 100%;
   position: relative;
   display: flex;
   margin-bottom: 5em;
   margin-top: 1.5em;
 }
-.searchh .loaded .product .Productlist .swiper-product,
-.searchh .loaded .product .Productlist .swiper-slide {
+.searchh-mobile .loaded .product .Productlist .swiper-product,
+.searchh-mobile .loaded .product .Productlist .swiper-slide {
   width: 100%;
   display: flex;
 }
-.searchh .loaded .product .swiper-button-next,
-.searchh .loaded .product .swiper-button-prev {
+.searchh-mobile .loaded .product .swiper-button-next,
+.searchh-mobile .loaded .product .swiper-button-prev {
   width: 55px;
   right: 0;
   z-index: 1;
@@ -1439,16 +1445,16 @@ footer.MobileFooter > .Bottom .CopyRight a span {
   -ms-transform: skew(5deg) rotate(4deg);
   -o-transform: skew(5deg) rotate(4deg);
 }
-.searchh .loaded .product .swiper-button-next::before, .searchh .loaded .product .swiper-button-next::after,
-.searchh .loaded .product .swiper-button-prev::before,
-.searchh .loaded .product .swiper-button-prev::after {
+.searchh-mobile .loaded .product .swiper-button-next::before, .searchh-mobile .loaded .product .swiper-button-next::after,
+.searchh-mobile .loaded .product .swiper-button-prev::before,
+.searchh-mobile .loaded .product .swiper-button-prev::after {
   content: none;
 }
-.searchh .loaded .product .swiper-button-next svg,
-.searchh .loaded .product .swiper-button-prev svg {
+.searchh-mobile .loaded .product .swiper-button-next svg,
+.searchh-mobile .loaded .product .swiper-button-prev svg {
   width: 10px;
 }
-.searchh .loaded .product .swiper-button-prev {
+.searchh-mobile .loaded .product .swiper-button-prev {
   left: unset;
   left: 0;
   transform: skew(-2deg) rotateY(-20deg);

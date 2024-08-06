@@ -1257,7 +1257,21 @@ margin: 5em 0;
     -o-transform: scale(.2);
 }
 }
-
+.resultSearch{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  p{
+      text-align: center;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22.45px;
+      color: #000;
+  }
+}
 .searchContainer{
   width: 100vw;
   height: 100vh;
@@ -1297,30 +1311,16 @@ background-color: transparent;
       opacity: 1;
       pointer-events: all;
   }
-  .resultSearch{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transform: translateY(15vh);
-      margin: 0 auto;
-      p{
-          text-align: center;
-          font-size: 13px;
-          font-weight: 400;
-          line-height: 22.45px;
-          color: #000;
-      }
-  }
+
 }
 
-.searchh .searchContainer{
+.searchh-mobile .searchContainer{
 position: unset;
 opacity: 1;
 height: unset;
 z-index: 0;
 pointer-events: fill;
+padding-top: 30vh;
 }
 
 .searchContainer .CloseSerch{
@@ -1351,7 +1351,7 @@ pointer-events: fill;
   color:$color-2;
   }
   .searchContainer .inputBox{
-      width: 60%;
+      width: 90%;
       display: flex;
       position: relative;
       justify-content: center;
@@ -1367,11 +1367,21 @@ pointer-events: fill;
   left: 10px;
   top: 0;
   }
-  .searchh{
+  .searchh-mobile{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    padding-top: 30vh;
+overflow: hidden;
+    .MobileHeader{
+      .ToggleItem{
+          background-color: $color-1 !important;
+      }
+      .SearchIcon{
+          svg,path{
+              stroke:  $color-1 !important;
+          }
+      }
+  }
     .loaded{
          justify-content: center;
          align-items: center;
@@ -1479,11 +1489,10 @@ pointer-events: fill;
     
         }
         .product{
-            width: 95%;
-            margin-right: auto;
-            display: flex;
-            flex-direction: column;
-            margin-top: 5em;
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
             >.Title{
                 width: auto;
                 display: flex;

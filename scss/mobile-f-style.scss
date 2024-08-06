@@ -554,6 +554,7 @@ main.Home-mobile{
     flex-direction: column;
     gap: 3em;
     margin: 5em 0;
+    margin-bottom: 1em;
     .ShowMoreBTN-2{
         width: fit-content;
         display: flex;
@@ -710,6 +711,16 @@ color:$color-1;
 main.ProductCat-mobile{
     width: 100%;
     overflow: hidden;
+    .MobileHeader{
+        .ToggleItem{
+            background-color: $color-1;
+        }
+        .SearchIcon{
+            svg,path{
+                stroke:  $color-1;
+            }
+        }
+    }
     .ProductCategories{
         width: 90%;
         margin: 0 auto;
@@ -866,14 +877,14 @@ overflow: hidden;
         .TitleBox{
             position: absolute;
             left: 0;
-            top: 0;
+            bottom: 0;
             width: 93%;
-            height: 100%;
+            height: 80%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: flex-start;
-            z-index:101;
+            z-index: 5;
             margin-right: auto;
             p{
                 font-size: 96px;
@@ -911,7 +922,7 @@ overflow: hidden;
             height: 100%;
             bottom: 0;
             margin: auto;
-            z-index: 100;
+            z-index: 6;
             background-color: $color-primary;
             display: flex;
             justify-content: center;
@@ -922,7 +933,8 @@ overflow: hidden;
             -ms-transition: all .5s ease;
             -o-transition: all .5s ease;
             opacity: 0;
-            pointer-events: none;
+            pointer-events: 
+            none;
             .IMG{
                 width: 100%;
                 display: flex;
@@ -966,12 +978,22 @@ overflow: hidden;
 main.AboutUsC-mobile{
     width: 100%;
     overflow: hidden;
+    .MobileHeader{
+        .ToggleItem{
+            background-color: $color-1;
+        }
+        .SearchIcon{
+            svg,path{
+                stroke:  $color-1;
+            }
+        }
+    }
     .AboutBannerC{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-bottom: 4em;
+        margin-bottom: 1em;
         gap: 1.8em;
         .Left{
             height: inherit;
@@ -1107,7 +1129,12 @@ main.AboutUsC-mobile{
                 margin: auto;
                 width: 90%;
                 h1{
-                    span{
+                   
+                    text-align: center;
+                    padding-bottom: .5em;
+                    border-bottom: 1px solid $color-1;
+                    span,p{
+                        text-align: center;
                         font-size: 18px;
                         font-weight: 900;
                         line-height: 31.09px;
@@ -1123,6 +1150,7 @@ main.AboutUsC-mobile{
                 margin-top: 1.5em;
                 overflow: hidden;
                 p{
+                    text-align: center;
                     font-size: 14px;
                     font-weight: 300;
                     line-height: 24.18px;
@@ -1199,14 +1227,15 @@ main.AboutUsC-mobile{
             }
         }
         >.Right{
-            width:90%;
+            width:100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: .8em;
             .Title-1{
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
             }
             .IMG{
       
@@ -1261,7 +1290,7 @@ main.AboutUsC-mobile{
         position: relative;
         display: flex;
         flex-direction: column;
-        margin: 10em 0 0 0;
+        margin: 3em 0 0 0;
         padding-bottom: 1.5em;
         &::before{
             content: '';
@@ -1331,6 +1360,8 @@ main.AboutUsC-mobile{
             }
             .Title-1{
                 width: 100%;
+                justify-content: center;
+                align-items: center;
                 p,span{
                     color: $color-3 ;
                      text-align: center;
@@ -1574,9 +1605,9 @@ main.AboutUsC-mobile{
             justify-content: flex-start;
             align-items: center;
             p{
-                font-size: 24px;
+                font-size: 16px;
                 font-weight: 400;
-                line-height: 41.45px;
+                line-height: 27.64px;
                 color: $color-1;
             }
         }

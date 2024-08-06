@@ -545,6 +545,7 @@ main.Home-mobile .NewsBlogs-Container {
   flex-direction: column;
   gap: 3em;
   margin: 5em 0;
+  margin-bottom: 1em;
 }
 main.Home-mobile .NewsBlogs-Container .ShowMoreBTN-2 {
   width: -moz-fit-content;
@@ -694,6 +695,12 @@ main.ProductCat-mobile {
   width: 100%;
   overflow: hidden;
 }
+main.ProductCat-mobile .MobileHeader .ToggleItem {
+  background-color: #000000;
+}
+main.ProductCat-mobile .MobileHeader .SearchIcon svg, main.ProductCat-mobile .MobileHeader .SearchIcon path {
+  stroke: #000000;
+}
 main.ProductCat-mobile .ProductCategories {
   width: 90%;
   margin: 0 auto;
@@ -839,14 +846,14 @@ main.ProductCat-mobile .ProductCat .IMG {
 main.ProductCat-mobile .ProductCat .TitleBox {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 93%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
-  z-index: 101;
+  z-index: 5;
   margin-right: auto;
 }
 main.ProductCat-mobile .ProductCat .TitleBox p {
@@ -884,7 +891,7 @@ main.ProductCat-mobile .ProductCat .Overlay-Hover {
   height: 100%;
   bottom: 0;
   margin: auto;
-  z-index: 100;
+  z-index: 6;
   background-color: #D30E15;
   display: flex;
   justify-content: center;
@@ -933,12 +940,18 @@ main.AboutUsC-mobile {
   width: 100%;
   overflow: hidden;
 }
+main.AboutUsC-mobile .MobileHeader .ToggleItem {
+  background-color: #000000;
+}
+main.AboutUsC-mobile .MobileHeader .SearchIcon svg, main.AboutUsC-mobile .MobileHeader .SearchIcon path {
+  stroke: #000000;
+}
 main.AboutUsC-mobile .AboutBannerC {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   gap: 1.8em;
 }
 main.AboutUsC-mobile .AboutBannerC .Left {
@@ -1067,7 +1080,13 @@ main.AboutUsC-mobile .AboutBannerC .Right .Title-1 {
   margin: auto;
   width: 90%;
 }
-main.AboutUsC-mobile .AboutBannerC .Right .Title-1 h1 span {
+main.AboutUsC-mobile .AboutBannerC .Right .Title-1 h1 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #000000;
+}
+main.AboutUsC-mobile .AboutBannerC .Right .Title-1 h1 span, main.AboutUsC-mobile .AboutBannerC .Right .Title-1 h1 p {
+  text-align: center;
   font-size: 18px;
   font-weight: 900;
   line-height: 31.09px;
@@ -1082,6 +1101,7 @@ main.AboutUsC-mobile .AboutBannerC .Right .Text {
   overflow: hidden;
 }
 main.AboutUsC-mobile .AboutBannerC .Right .Text p {
+  text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 24.18px;
@@ -1155,7 +1175,7 @@ main.AboutUsC-mobile .About-Container > .Left > .Bottom .Col .Text p {
   text-align: justify;
 }
 main.AboutUsC-mobile .About-Container > .Right {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1163,7 +1183,8 @@ main.AboutUsC-mobile .About-Container > .Right {
   gap: 0.8em;
 }
 main.AboutUsC-mobile .About-Container > .Right .Title-1 {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 main.AboutUsC-mobile .About-Container > .Right .IMG {
   width: 100%;
@@ -1215,7 +1236,7 @@ main.AboutUsC-mobile .About-ContainerS2 {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 10em 0 0 0;
+  margin: 3em 0 0 0;
   padding-bottom: 1.5em;
 }
 main.AboutUsC-mobile .About-ContainerS2::before {
@@ -1287,6 +1308,8 @@ main.AboutUsC-mobile .About-ContainerS2 .Left .ContentBox {
 }
 main.AboutUsC-mobile .About-ContainerS2 .Left .Title-1 {
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 main.AboutUsC-mobile .About-ContainerS2 .Left .Title-1 p, main.AboutUsC-mobile .About-ContainerS2 .Left .Title-1 span {
   color: #fff;
@@ -1534,9 +1557,9 @@ main.AboutUsC-mobile .About-ContainerS2 .ImgSlider .swiper-IMG .swiper-wrapper .
   align-items: center;
 }
 .New .Title a p {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 41.45px;
+  line-height: 27.64px;
   color: #000000;
 }
 .New .Desc {

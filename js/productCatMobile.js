@@ -6,3 +6,9 @@ for(let i = 0 ; i< products.length ; i++){
         
     }
 }
+let titles = document.querySelectorAll('.ProductCat .TitleBox p')
+let cats = document.querySelectorAll('.ProductCat')
+let i =1
+for(let i =0;i<cats.length;i++){
+    titles[i].innerHTML = `0${i+1}`;
+}
